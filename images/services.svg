@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" preserveAspectRatio="xMidYMid slice">
+  <rect width="800" height="600" fill="#e8f5e9"/>
+  <g opacity="0.25">
+    <polygon points="100,500 150,400 200,500" fill="#a5d6a7"/>
+    <rect x="145" y="500" width="10" height="30" fill="#81c784"/>
+    <polygon points="300,450 340,370 380,450" fill="#a5d6a7"/>
+    <rect x="335" y="450" width="10" height="25" fill="#81c784"/>
+    <polygon points="550,480 600,380 650,480" fill="#a5d6a7"/>
+    <rect x="595" y="480" width="10" height="30" fill="#81c784"/>
+    <polygon points="700,520 740,440 780,520" fill="#a5d6a7"/>
+    <rect x="735" y="520" width="10" height="20" fill="#81c784"/>
+  </g>
+  <circle cx="150" cy="100" r="50" fill="#c8e6c9" opacity="0.4"/>
+  <circle cx="400" cy="150" r="4" fill="#81c784" opacity="0.4"/>
+  <circle cx="600" cy="200" r="5" fill="#81c784" opacity="0.3"/>
+  <circle cx="250" cy="300" r="3" fill="#81c784" opacity="0.4"/>
+</svg>

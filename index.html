@@ -3,46 +3,69 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="C:\Users\felix\gitwebrepo\web-assignment1\css\index.css" />
+    <meta name="description" content="Safari Crest promotes responsible ecotourism and nature conservation in Kenya through guided hikes, wildlife experiences and community programmes." />
     <title>Homepage</title>
-    <div class="header">
-      <h1> ⛰️ Safari Crest</h1>  
-      <nav>
+    <link rel="stylesheet" href="css/index.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <h1 class="logo">⛰️ Safari Crest</h1>
+
+      <nav aria-label="Main navigation">
         <ul>
-          <li><a href="C:\Users\felix\gitwebrepo\web-assignment1\about-us.html">About Us</a></li>
-          <li><a href="C:\Users\felix\gitwebrepo\web-assignment1\services.html">Services</a></li>
-          <li><a href="C:\Users\felix\gitwebrepo\web-assignment1\contact-us.html">Contact Us</a></li>
+          <li><a href="about-us.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="contact-us.html">Contact Us</a></li>
         </ul>
       </nav>
-    </div>
-  </head>
-  <body>
-    <div class="intro">
-      <h2>Welcome to Safari Crest</h2>
-      <p>
-        Safari Crest is an organization that promotes responsible ecotourism and nature conservation in Kenya. 
-        We organize guided hiking and wildlife experiences, support local communities living near conservation areas,
-        and educate visitors about protecting the natural environment. 
-      </p>
-    </div>
-    <div class="background"> <img src="/backg1.png" alt=""></div>
-    <div id = "services">
-      <h3>Services we offer:</h3><br>
-      <ul>
-        <li>Guided hiking tours</li>
-        <li>Wildlife experiences</li>
-        <li>Community support programs</li>
-        <li>Educate visitors about conservation</li>
-      </ul>
-    </div>
-    <div id = "contact">
-      <h3>Contact Us</h3><br>
-      <p>Have questions or want to learn more? Reach out to us!</p>
-    </div>
+    </header>
 
-    <div id = "about">
-      <h3>About Us</h3><br>
-      <p>Learn more about Safari Crest and our mission.</p>
-    </div>
+    <main>
+      <section class="hero">
+        <div class="hero-text">
+          <h2>Welcome to Safari Crest</h2>
+          <p>
+            Safari Crest is an organisation that promotes responsible ecotourism
+            and nature conservation in Kenya. We organise guided hiking and
+            wildlife experiences, support local communities living near
+            conservation areas, and educate visitors about protecting the
+            natural environment.
+          </p>
+        </div>
+
+        <img
+          class="hero-image"
+          src="images/backg1.png"
+          alt="Safari Crest"
+        />
+      </section>
+
+      <section class="cards">
+        <article class="card" id="services">
+          <h3>Services we offer</h3>
+            <li>Guided hiking tours</li>
+            <li>Wildlife experiences ...</li>
+            <a class="card-link" href="services.html">Learn more</a>
+          
+        </article>
+
+        <article class="card" id="contact">
+          <h3>Contact Us</h3>
+          <p>Reach out to us with any questions.</p>
+          <a class="card-link" href="contact-us.html">Contact us?</a>
+        </article>
+
+        <article class="card" id="about">
+          <h3>About Us</h3>
+          <p>Learn more aboout Safari Crest.</p>
+          <a class="card-link" href="about-us.html">Want to learn more?</a>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy;Safari Crest</p>
+    </footer>
   </body>
 </html>
