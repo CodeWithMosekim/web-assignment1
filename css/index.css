@@ -4,6 +4,7 @@ button {
     color: white;
     padding: 15px 32px;
     text-align: center;
+    float: inline-end;
 }   
 
 a {
@@ -11,34 +12,38 @@ a {
 }
 
 #services {
-    width: 28%;
-    height: 8em;
-    display: flex;
+    width: 27%;
+    height:10em auto;
     background-color: #f2f2f2;
-    padding: 20px;
     margin: 20px 0;
+    padding: 20px;
     border-radius: 5px;
     float: left;
+    margin-left: 3%;
+    text-align: auto;
 }
 
 #contact {
-    width: 28%;
-    height: 8em;
-    display: flex;
+    width: 27%;
+    height:10em auto;
     background-color: #f2f2f2;
-    padding: 20px;
     margin: 20px 0;
+    padding: 20px;
     border-radius: 5px;
-    float: center;
+    float: left;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    text-align: auto;
 }
 
 #about {
-    width: 28%; 
-    height: 8em;
-    display: flex;
+    width: 27%; 
+    height:10em auto;
     background-color: #f2f2f2;
+    margin: 20px 0; 
     padding: 20px;
-    margin: 20px 0;
     border-radius: 5px;
-    float: right;
+    float: left;
+    margin-right: 3%;
+    text-align: auto;
 }
