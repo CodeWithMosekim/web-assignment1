@@ -45,10 +45,19 @@ nav ul a:hover {
     border: 1px solid green;
 }
 
-.intro {
-    width: 100%;
-    margin: 0 auto;
+#intro {
+    text-align: center;
+    margin: 20px 0;
     padding: 20px;
+}
+
+#background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
 }
 
 #services {
