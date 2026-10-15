@@ -1,6 +1,4 @@
 
-*,
-*::before,
 *::after {
   box-sizing: border-box;
 }
@@ -28,7 +26,7 @@ img {
   display: block;
 }
 
-.site-header {
+.header {
   position: fixed;
   top: 0;
   left: 0;
@@ -72,7 +70,7 @@ nav a:hover {
   border-color: #2e7d32;
 }
 
-.hero {
+.body {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -82,24 +80,24 @@ nav a:hover {
   background-color: #f2f2f2;
 }
 
-.hero-text {
+.body-text {
   flex: 1 1 50%;
 }
 
-.hero-text h2 {
+.body-text h2 {
   font-size: 2rem;
   color: #2e7d32;
   margin-bottom: 15px;
 }
 
-.hero-text p {
+.body-text p {
     font: inherit;
     font-size: 1.1rem;
     color: #333;
     max-width: 55ch;
 }
 
-.hero-image {
+.body-image {
   flex: 1 1 50%;
   width: 100%;
   max-height: 420px;
@@ -164,7 +162,7 @@ nav a:hover {
   text-decoration: underline;
 }
 
-.site-footer {
+.footer {
   text-align: center;
   padding: 25px 20px;
   background-color: #f2f2f2;
@@ -199,7 +197,7 @@ nav a:hover {
     padding-top: 110px;
   }
 
-  .site-header {
+  .header {
     flex-direction: column;
     gap: 10px;
     padding: 12px 15px;
@@ -210,23 +208,23 @@ nav a:hover {
     justify-content: center;
   }
 
-  .hero {
+  .body {
     flex-direction: column;
     min-height: auto;
     padding: 30px 20px;
   }
 
-  .hero-text,
-  .hero-image {
+  .body-text,
+  .body-image {
     flex: 1 1 100%;
     max-width: 100%;
   }
 
-  .hero-text h2 {
+  .body-text h2 {
     font-size: 1.7rem;
   }
 
-  .hero-image {
+  .body-image {
     max-height: 280px;
   }
 
