@@ -46,6 +46,11 @@ img {
   font-weight: 700;
   white-space: nowrap;
 }
+.logo em {
+  font-style: italic;
+  color: #1f5a23;
+  font-weight: 500;
+}
 
 nav ul {
   display: flex;
