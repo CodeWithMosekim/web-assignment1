@@ -1,1 +1,426 @@
+* {
+  box-sizing: border-box;
+}
 
+body {
+  margin: 0;
+  background: #f7f8f3;
+  color: #283a31;
+  font-family: Arial, sans-serif;
+  font-size: 15px;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  width: min(90%, 900px);
+  margin: 0 auto;
+}
+
+/* Header */
+.site-header {
+  border-bottom: 1px solid #dce2d9;
+  padding: 1.25rem 0;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  color: #17613f;
+  font-family: Georgia, serif;
+  font-size: 1.1rem;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.navigation {
+  display: flex;
+  gap: 1.4rem;
+}
+
+.navigation a {
+  color: #283a31;
+  font-size: .72rem;
+  text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation .active {
+  color: #ef713d;
+  border-bottom: 1px solid #ef713d;
+  padding-bottom: .35rem;
+}
+
+/* Shared labels */
+.about-page {
+  padding-top: 2rem;
+}
+
+.eyebrow,
+.story-text > span,
+.mission-section span,
+.team-text > span {
+  display: block;
+  color: #17613f;
+  font-size: .65rem;
+  font-weight: bold;
+  letter-spacing: .05em;
+}
+
+h2 {
+  color: #17613f;
+  font-family: Georgia, serif;
+  font-weight: normal;
+}
+
+p {
+  line-height: 1.6;
+}
+
+/* Intro band */
+.about-introduction {
+  display: grid;
+  grid-template-columns: 1.4fr .8fr;
+  gap: 3rem;
+  align-items: center;
+  min-height: 230px;
+  margin-top: 1rem;
+  padding: 3.5rem 2rem;
+  background:
+    linear-gradient(rgba(25, 55, 39, .62), rgba(25, 55, 39, .62)),
+    url("../images/guided-hiking.jpg") center / cover no-repeat;
+}
+
+.about-introduction h1 {
+  margin: 0;
+  color: #fffaf0;
+  font-family: Georgia, serif;
+  font-size: 2.5rem;
+  font-weight: normal;
+}
+
+.about-introduction p {
+  max-width: 300px;
+  margin: 0;
+  color: #fffaf0;
+  font-size: 14px;
+}
+
+/* Story */
+.story-section,
+.team-section {
+  display: grid;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.story-section {
+  grid-template-columns: 1.1fr .9fr;
+  padding: 2.5rem 0;
+}
+
+.team-section {
+  grid-template-columns: 1.1fr .9fr;
+  border-top: 1px solid #dce2d9;
+  padding: 2.5rem 0;
+}
+
+.story-text h2,
+.team-text h2 {
+  margin: .45rem 0 .8rem;
+  font-size: 1.5rem;
+}
+
+.story-text p,
+.team-text p,
+.section-intro,
+.project p,
+.value-card p {
+  font-size: 14px;
+}
+
+figure {
+  margin: 0;
+}
+
+figure img {
+  display: block;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+figcaption {
+  margin-top: .35rem;
+  color: #5a3828;
+  font-size: 11px;
+  line-height: 1.4;
+}
+
+/* Mission */
+.mission-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  padding-bottom: 2.5rem;
+}
+
+.mission-section article {
+  border-top: 2px solid #ef713d;
+  padding-top: .6rem;
+}
+
+.mission-section p {
+  margin: .5rem 0 0;
+  color: #17613f;
+  font-family: Georgia, serif;
+  font-size: 1.05rem;
+}
+
+/* Values */
+.values-section {
+  border-top: 1px solid #dce2d9;
+  padding: 2.5rem 0;
+}
+
+.values-section h2,
+.join-section h2 {
+  margin: 0 0 .6rem;
+  font-size: 1.7rem;
+}
+
+.values-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.5rem;
+  margin-top: 1.8rem;
+}
+
+.value-card {
+  border-top: 1px solid #dce2d9;
+  padding: .8rem;
+  transition: transform .25s ease, box-shadow .25s ease, background-color .25s ease;
+}
+
+.value-card:hover {
+  transform: translateY(-6px);
+  background-color: #ffffff;
+  box-shadow: 0 8px 18px rgba(23, 97, 63, .15);
+  border-top-color: #ef713d;
+}
+
+.value-card span {
+  color: #17613f;
+  font-size: .75rem;
+}
+
+.value-card h3,
+.project h3 {
+  margin: .65rem 0 .45rem;
+  color: #17613f;
+  font-size: .9rem;
+  transition: color .25s ease;
+}
+
+.value-card:hover h3 {
+  color: #ef713d;
+}
+
+.value-card p {
+  margin: 0;
+  color: #5a3828;
+}
+
+/* Conservation */
+.conservation-section {
+  border-top: 1px solid #dce2d9;
+  padding: 2.5rem 0;
+}
+
+.conservation-band {
+  display: flex;
+  align-items: center;
+  min-height: 260px;
+  padding: 2.5rem;
+  background:
+    linear-gradient(rgba(25, 55, 39, .68), rgba(25, 55, 39, .68)),
+    url("../images/tree-planting.jpg") center / cover no-repeat;
+}
+
+.conservation-overlay {
+  max-width: 430px;
+}
+
+.conservation-overlay h2 {
+  margin: 0 0 .6rem;
+  color: #fffaf0;
+  font-size: 1.9rem;
+}
+
+.conservation-overlay p {
+  margin: 0;
+  color: #fffaf0;
+}
+
+.project-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 1.8rem;
+}
+
+.project {
+  border-top: 1px solid #dce2d9;
+  padding-top: .8rem;
+}
+
+.project p {
+  margin: 0;
+  color: #5a3828;
+}
+
+/* Guides */
+.team-text ul {
+  margin: 1rem 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.team-text li {
+  border-bottom: 1px solid #dce2d9;
+  padding: .6rem 0;
+  font-size: 14px;
+}
+
+.team-text li::before {
+  content: "— ";
+  color: #a9c66b;
+}
+
+/* Closing call */
+.join-section {
+  border-top: 1px solid #dce2d9;
+  padding: 2rem 0 .5rem;
+}
+
+.join-section a {
+  color: #17613f;
+  text-decoration: underline;
+}
+
+.join-section a:hover {
+  color: #ef713d;
+}
+
+/* Footer */
+.site-footer {
+  margin-top: 2rem;
+  background: #17613f;
+  color: #f4f6ed;
+  padding: 1.8rem 0 1rem;
+}
+
+.footer-content {
+  display: grid;
+  grid-template-columns: 1.5fr .7fr 1.3fr;
+  gap: 2rem;
+}
+
+.footer-content h2 {
+  margin: 0 0 .7rem;
+  color: #f4f6ed;
+  font-size: 1.1rem;
+}
+
+.footer-content h3 {
+  margin: 0 0 .7rem;
+  color: #c8dd8c;
+  font-size: .75rem;
+}
+
+.footer-content p {
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.footer-content a {
+  display: block;
+  width: max-content;
+  margin: .35rem 0;
+  color: #f4f6ed;
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.footer-content a:hover {
+  color: #ef713d;
+}
+
+.copyright {
+  border-top: 1px solid rgba(255, 255, 255, .2);
+  margin-top: 1.2rem;
+  padding-top: .9rem;
+  color: #f4f6ed;
+  font-size: 12px;
+}
+
+/* Tablet */
+@media (max-width: 700px) {
+  .header-content,
+  .about-introduction,
+  .story-section,
+  .team-section,
+  .mission-section,
+  .footer-content {
+    grid-template-columns: 1fr;
+  }
+
+  .header-content {
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .navigation {
+    flex-wrap: wrap;
+    gap: .8rem;
+  }
+
+  .about-introduction {
+    gap: 1rem;
+    padding: 2.5rem 1.2rem;
+  }
+
+  .about-introduction h1 {
+    font-size: 2rem;
+  }
+
+  .conservation-band {
+    min-height: 230px;
+    padding: 2rem 1.3rem;
+  }
+
+  .values-grid,
+  .project-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .values-grid,
+  .project-list {
+    grid-template-columns: 1fr;
+  }
+
+  figure img {
+    height: auto;
+  }
+}
